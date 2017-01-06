@@ -1,0 +1,19 @@
+<GridView>
+  <FAB
+    row="1"
+    (tap)="goToAdd()"
+    icon="~/ic_add_white.png"
+    rippleColor="#f1f1f1"
+    class="fab-button"
+  ></FAB>
+
+  <ListView row="1" [items]="list$|async">
+    <template let-item="item">
+      <CheckBox [text]="item.name" [checked]="item.done"></CheckBox>
+    </template>
+  </ListView>
+
+  <StackLayout row="1" *ngIf="listIsEmpty$|async" [items]="list|async">
+    <Label text="Vous n'avez pas de taches"></Label>
+  </StackLayout>
+</GridView>

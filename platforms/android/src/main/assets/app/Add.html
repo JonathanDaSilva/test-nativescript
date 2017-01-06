@@ -1,0 +1,4 @@
+<StackLayout>
+  <TextField [text]="name|async" (textChange)="textChange($event)"></TextField>
+  <Button text="ADD" (tap)="add()"></Button>
+</StackLayout>

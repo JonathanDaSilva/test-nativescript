@@ -1,0 +1,104 @@
+{
+  "name": "nativescript-checkbox",
+  "version": "1.2.3",
+  "description": "NativeScript plugin for checkbox widget.",
+  "main": "checkbox",
+  "nativescript": {
+    "platforms": {
+      "android": "2.4.0",
+      "ios": "2.4.0"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "copy.ios": "cp -R checkbox.*.js demo/node_modules/nativescript-checkbox && cd demo && tns livesync ios --watch",
+    "copy.android": "cp -R checkbox.*.js demo/node_modules/nativescript-checkbox && cd demo && tns livesync android --watch",
+    "buildrun": "npm run build && cp -R checkbox.*.js demo/node_modules/nativescript-checkbox",
+    "demo.ios": "npm run preparedemo && cdcd demo && tns emulate ios",
+    "demo.android": "npm run preparedemo && cd demo && tns run android",
+    "debug.ios": "npm run preparedemo && cd demo && tns debug ios",
+    "debug.android": "npm run preparedemo && cd demo && tns debug android",
+    "preparedemo": "npm run build && cd demo && tns plugin remove nativescript-checkbox && tns plugin add .. && tns install",
+    "setup": "cd demo && npm install && cd .. && npm run build && cd demo && tns plugin add .. && cd .."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradmartin/nativescript-checkbox.git"
+  },
+  "keywords": [
+    "NativeScript",
+    "JavaScript",
+    "TypeScript",
+    "Android",
+    "iOS",
+    "Material Design",
+    "CheckBox",
+    "bradmartin",
+    "thorum"
+  ],
+  "author": {
+    "name": "Brad Martin",
+    "email": "bradwaynemartin@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Nathan Walker",
+      "email": "walkerrunpdx@gmail.com",
+      "url": "https://github.com/NathanWalker"
+    },
+    {
+      "name": "Steve McNiven-Scott",
+      "email": "steve@sitefinitysteve.com",
+      "url": "https://github.com/sitefinitysteve"
+    },
+    {
+      "name": "Osei Fortune",
+      "email": "fortune.osei@yahoo.com",
+      "url": "https://github.com/triniwiz"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/bradmartin/nativescript-checkbox/issues"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/bradmartin/nativescript-checkbox",
+  "devDependencies": {
+    "tns-platform-declarations": "^2.0.0",
+    "typescript": "^1.8.10"
+  },
+  "gitHead": "fb42b5a420ffd2ace516b3b5251e6441bc7d8f45",
+  "_id": "nativescript-checkbox@1.2.3",
+  "_shasum": "5ea7d3cd4bbc762894d04ace466da5bff6eef6e1",
+  "_from": "nativescript-checkbox@latest",
+  "_npmVersion": "3.6.0",
+  "_nodeVersion": "5.7.1",
+  "_npmUser": {
+    "name": "bradmartin",
+    "email": "bradmartin0905@gmail.com"
+  },
+  "dist": {
+    "shasum": "5ea7d3cd4bbc762894d04ace466da5bff6eef6e1",
+    "tarball": "https://registry.npmjs.org/nativescript-checkbox/-/nativescript-checkbox-1.2.3.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "bradmartin",
+      "email": "bradmartin0905@gmail.com"
+    },
+    {
+      "name": "sitefinitysteve",
+      "email": "steve@sitefinitysteve.com"
+    },
+    {
+      "name": "walkerrunpdx",
+      "email": "walkerrunpdx@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/nativescript-checkbox-1.2.3.tgz_1480957573619_0.8938269997015595"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/nativescript-checkbox/-/nativescript-checkbox-1.2.3.tgz",
+  "readme": "ERROR: No README data found!"
+}
